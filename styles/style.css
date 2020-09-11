@@ -1,5 +1,24 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
+main {
+    text-align: center;
+    text-decoration: none;
+    min-width: 20em;
+    max-width: 40em;
+    padding: 4em;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1em;
+}
