@@ -10,15 +10,38 @@ main {
     text-decoration: none;
     min-width: 20em;
     max-width: 40em;
-    padding: 4em;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 2.4em;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1em;
+}
+
+.melding {
+    font-size: 0.7em;
+    width: 375px;
+    height: 97px;
+}
+
+section {
+    padding: 0.5em;
+}
+
+.iPhoneSE {
+    background-color: #131313;
+    color: white;
+}
+
+.link {
+    color: #2997ff;
+}
+
+.prijs {
+    color: gainsboro;
+    font-size: 1em
 }
