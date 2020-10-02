@@ -46,7 +46,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+Hoe kan ik in mijn P element een enter doen? 
+Hoe krijg ik images over het hele scherm en zelfs er buiten?
+Hoe houd ik mijn tekst goed in het midden? dat was nu met margin en padding..
+De background color gaat niet helemaal over de pagina?
+de website blijft veranderen hoe maak ik die nu goed na?
 
 ### Verslag van meeting
 
