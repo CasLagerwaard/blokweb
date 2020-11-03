@@ -8,37 +8,82 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: helvetica;
 }
 
 /* Navigatie */
 
-nav {
-    opacity: 99%;
+header {
+    position: fixed;
+    background-color: #333;
+    width: 100%;
+    height: 3em;
 }
 
-ul {
+header img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Dit blur effect werkt nog niet
+body header {
+    opacity: 95%;
+    filter: blur(1px);
+}
+*/
+
+header nav button {
+    background-color: transparent;
+    border: none;
+    background-color: transparent;
+    padding: 0.9em;
+
+}
+
+
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    height: 3em;
+    flex-wrap: wrap;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #333;
-    position: fixed;
-    width: 100%;
-    display: flex;
     justify-content: space-between;
+    order: 3;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    max-height: 0;
+    pointer-events: none;
 }
 
-
-li {
-    float: left;
-
+nav ul.hamburgermenu {
+    opacity: 1;
+    max-height: 1000em;
+    pointer-events: all;
+    transition: 1s;
 }
+
+nav li {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
 
 li a {
-    display: block;
     color: white;
-    padding: 1.2em;
     text-decoration: none;
+    border-bottom: 1px solid grey;
+    font-size: 1.3em;
 }
 
 /* Main */
@@ -48,80 +93,48 @@ main {
     text-decoration: none;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 100%;
     margin: 0 auto;
-    grid-column-gap: 5px;
+    grid-column-gap: 20px;
 }
+
 
 section {
     overflow: hidden;
 }
 
-main section:first-of-type {
-    grid-column: span 4;
-}
-
-main section:nth-of-type(2) {
-    grid-column: span 4;
-}
-
-main section:nth-of-type(3) {
-    grid-column: span 4;
-}
-
-main section:nth-of-type(4) {
-    grid-column: span 2;
-}
-
-main section:nth-of-type(5) {
-    grid-column: span 2;
-}
-
-main section:nth-of-type(6) {
-    grid-column: span 2;
-}
-
-main section:nth-of-type(7) {
-    grid-column: span 2;
-}
-
-main section:nth-of-type(8) {
-    grid-column: span 4;
-}
-
-main section:nth-of-type(9) {
-    grid-column: span 4;
-}
-
-main section:nth-of-type(10) {
-    grid-column: span 4;
-}
-
-main section:nth-of-type(11) {
-    grid-column: span 4;
-}
-
-
-
-main section img {
-    width: 100%;
-}
 
 h1 {
     font-weight: bold;
     font-size: 2.4em;
 }
 
-p {
+h2 {
+    font-weight: bold;
+    font-size: 2.4em;
+}
+
+
+main section:nth-of-type(4) h1,
+main section:nth-of-type(5) h1,
+main section:nth-of-type(6) h1,
+main section:nth-of-type(7) h1 {
+    font-size: 2em;
+
+}
+
+
+.index p {
     font-size: 1.3em;
     line-height: 1em;
 }
 
 
+
 .melding {
     font-size: 0.7em;
-    padding-top: 4.2em;
+    padding-top: 4em;
     padding-left: 3em;
     padding-right: 3em;
 }
@@ -152,6 +165,34 @@ p {
     background-color: #FBFBFD;
 }
 
+.ipadpro img {
+    width: 70%
+}
+
+.event {
+    background-color: #FBFBFD;
+}
+
+.event img {
+    width: 80%
+}
+
+.airpods {
+    background-color: #FFFFFF;
+}
+
+.airpods img {
+    width: 70%
+}
+
+.arcade {
+    background-color: #FFFFFF;
+}
+
+.arcade img {
+    width: 90%;
+}
+
 .link {
     color: #2997ff;
 }
@@ -159,4 +200,179 @@ p {
 .prijs {
     color: gainsboro;
     font-size: 1em
+}
+
+footer {
+    background-color: #F5F5F7
+}
+
+footer p {
+    font-size: 0.7em;
+    color: #86868B;
+    line-height: 1.3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    padding-top: 1.5em;
+}
+
+footer button {
+    font-size: 0.9em;
+    margin-left: 1em;
+    border: none;
+    color: black;
+    background-color: transparent;
+}
+
+footer ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+footer ul.footeraan {
+    display: block;
+}
+
+
+@media (min-width: 850px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section:nth-of-type(1) {
+        grid-column: span 2
+    }
+
+    main section:nth-of-type(2) {
+        grid-column: span 2
+    }
+
+    main section:nth-of-type(3) {
+        grid-column: span 2
+    }
+
+    main section:nth-of-type(8) {
+        grid-column: span 2
+    }
+
+    main section:nth-of-type(9) {
+        grid-column: span 2
+    }
+
+    main section:nth-of-type(10) {
+        grid-column: span 2
+    }
+
+    main section:nth-of-type(2) img {
+        width: 50%;
+        height: 50%;
+    }
+
+
+    nav ul {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        height: auto;
+        order: 0;
+        max-height: 1000em;
+        opacity: 100;
+        pointer-events: all;
+    }
+
+    nav li {
+        margin-top: 0;
+        font-size: 0.8em;
+    }
+
+    li a {
+        border-bottom: none;
+    }
+
+
+}
+
+
+/* dit is voor pagina 2*/
+
+#support {
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    grid-column-gap: 5px;
+}
+
+.supportimg {
+    width: 735px;
+    height: 326px;
+    object-fit: cover;
+    min-height: 326px;
+}
+
+@media (min-width: 735px) {
+    .support img:nth-last-of-type(1) {
+        width: 1800px;
+        height: 500px;
+        background-size: cover;
+        background-position: center 30%;
+    }
+}
+
+
+@media (min-width: 850px) {
+    .support {
+        grid-template-columns: 1fr;
+    }
+
+    main section:nth-of-type(1) {
+        grid-column: span 1
+    }
+
+    main section:nth-of-type(2) {
+        grid-column: span 1
+    }
+
+    main section:nth-of-type(3) {
+        grid-column: span 1
+    }
+
+    main section:nth-of-type(8) {
+        grid-column: span 1
+    }
+
+    main section:nth-of-type(9) {
+        grid-column: span 1
+    }
+
+    main section:nth-of-type(10) {
+        grid-column: span 1
+    }
+
+
+    nav ul {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        height: auto;
+        order: 0;
+        max-height: 1000em;
+        opacity: 100;
+        pointer-events: all;
+    }
+
+    nav li {
+        margin-top: 0;
+        font-size: 0.8em;
+    }
+
+    li a {
+        border-bottom: none;
+    }
+
+
 }
