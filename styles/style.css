@@ -83,7 +83,8 @@ li a {
     color: white;
     text-decoration: none;
     border-bottom: 1px solid grey;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    font-weight: 100;
 }
 
 /* Main */
@@ -96,7 +97,7 @@ main {
     grid-template-columns: 1fr;
     width: 100%;
     margin: 0 auto;
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
 }
 
 
@@ -106,21 +107,29 @@ section {
 
 
 h1 {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 2.4em;
 }
 
-h2 {
-    font-weight: bold;
+main section:nth-of-type(1) h2 {
+    color: transparent;
+}
+
+main section:nth-of-type(3) h2 {
     font-size: 2.4em;
+    font-weight: 600;
 }
 
 
-main section:nth-of-type(4) h1,
-main section:nth-of-type(5) h1,
-main section:nth-of-type(6) h1,
-main section:nth-of-type(7) h1 {
-    font-size: 2em;
+main section:nth-of-type(4) h2,
+main section:nth-of-type(5) h2,
+main section:nth-of-type(6) h2,
+main section:nth-of-type(7) h2,
+main section:nth-of-type(8) h2,
+main section:nth-of-type(9) h2,
+main section:nth-of-type(10) h2 {
+    font-size: 2.4em;
+    font-weight: 100;
 
 }
 
@@ -134,7 +143,7 @@ main section:nth-of-type(7) h1 {
 
 .melding {
     font-size: 0.7em;
-    padding-top: 4em;
+    padding-top: 1em;
     padding-left: 3em;
     padding-right: 3em;
 }
@@ -182,7 +191,7 @@ main section:nth-of-type(7) h1 {
 }
 
 .airpods img {
-    width: 70%
+    width: 55%
 }
 
 .arcade {
@@ -193,6 +202,14 @@ main section:nth-of-type(7) h1 {
     width: 90%;
 }
 
+.airpods2 {
+    background-color: #F2F2F2
+}
+
+.airpods2 img {
+    width: 50%;
+}
+
 .link {
     color: #2997ff;
 }
@@ -201,6 +218,8 @@ main section:nth-of-type(7) h1 {
     color: gainsboro;
     font-size: 1em
 }
+
+/* Footer */
 
 footer {
     background-color: #F5F5F7
@@ -234,6 +253,7 @@ footer ul.footeraan {
     display: block;
 }
 
+/* aanpassingen voor desktop scherm, grid en navbar */
 
 @media (min-width: 850px) {
     main {
@@ -290,7 +310,6 @@ footer ul.footeraan {
         border-bottom: none;
     }
 
-
 }
 
 
@@ -308,71 +327,90 @@ footer ul.footeraan {
 }
 
 .supportimg {
-    width: 735px;
+    width: 100%;
     height: 326px;
     object-fit: cover;
     min-height: 326px;
 }
 
+input {
+    width: 80%;
+    height: 3.5em;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+.support section:nth-of-type(2) h2,
+.support section:nth-of-type(3) h2,
+.support section:nth-of-type(4) h2 {
+    font-size: 2.4em;
+    font-weight: 200;
+}
+
+/* Tablet aanpassingen*/
+
 @media (min-width: 735px) {
     .support img:nth-last-of-type(1) {
-        width: 1800px;
+        width: 100%px;
         height: 500px;
         background-size: cover;
         background-position: center 30%;
     }
 }
 
+/* grid voor tweede pagina */
 
 @media (min-width: 850px) {
     .support {
         grid-template-columns: 1fr;
     }
 
-    main section:nth-of-type(1) {
+    .support section:nth-of-type(1) {
         grid-column: span 1
     }
 
-    main section:nth-of-type(2) {
+    .support section:nth-of-type(2) {
         grid-column: span 1
     }
 
-    main section:nth-of-type(3) {
+    .support section:nth-of-type(3) {
         grid-column: span 1
     }
 
-    main section:nth-of-type(8) {
+    .support section:nth-of-type(8) {
         grid-column: span 1
     }
 
-    main section:nth-of-type(9) {
+    .support section:nth-of-type(9) {
         grid-column: span 1
     }
 
-    main section:nth-of-type(10) {
+    .support section:nth-of-type(10) {
         grid-column: span 1
     }
 
 
-    nav ul {
-        width: 60%;
-        display: flex;
-        align-items: center;
-        height: auto;
-        order: 0;
-        max-height: 1000em;
-        opacity: 100;
-        pointer-events: all;
+
+    input {
+        width: 40em;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 170px;
     }
 
-    nav li {
-        margin-top: 0;
-        font-size: 0.8em;
+    .support section:nth-of-type(1) h1 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 75px;
+        font-size: 2.1em;
+        font-weight: 400;
     }
-
-    li a {
-        border-bottom: none;
-    }
-
 
 }
