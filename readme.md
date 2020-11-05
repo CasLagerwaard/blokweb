@@ -6,15 +6,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.w3schools.com/
+2. https://css-tricks.com/
+3. https://www.youtube.com/watch?v=br-0i3U1VCA
+4. https://www.youtube.com/watch?v=PwWHL3RyQgk&t=229s
 
 
 
 ## Eindgesprek (week 7/8)
 
 -dit ging goed & dit was lastig-
+
+Niet van toepassing (ik was er niet)
 
 **Screenshot(s):**
 
@@ -26,11 +29,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -same as voortgang 1-
 
+veel problemen met de nav bar, responsive design ging wel erg goed, veel gewerkt met classes, hierdoor heb ik bijvoorbeeld de CSS van pagina 2 anders gemaakt.
+
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Ik liep vast met de navbar, en ik had niet echt een
+goed idee hoe ik het hamburger menu moest gaan maken, de grid maken
+van de website ging wel erg goed.
 
 
 
@@ -39,6 +46,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
+Er ging niet heel veel mis, ik was vooral bezig met
+html en css zoveel mogelijk laten lijken op de echte apple 
+webstite.
 
 **Screenshot(s):**
 

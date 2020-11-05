@@ -18,6 +18,7 @@ header {
     background-color: #333;
     width: 100%;
     height: 3em;
+    z-index: 10;
 }
 
 header img {
@@ -109,6 +110,10 @@ section {
 h1 {
     font-weight: 600;
     font-size: 2.4em;
+}
+
+p {
+    font-weight: 100;
 }
 
 main section:nth-of-type(1) h2 {
@@ -249,7 +254,21 @@ footer ul {
     flex-direction: column;
 }
 
-footer ul.footeraan {
+footer button {
+    color: #86868B;
+    font-weight: 100;
+}
+
+footer div ul li {
+    color: #86868B;
+    font-weight: 100;
+}
+
+.footerAan div:nth-of-type(1) ul {
+    display: block;
+}
+
+.footerAan2 div:nth-of-type(2) ul {
     display: block;
 }
 
@@ -284,11 +303,10 @@ footer ul.footeraan {
         grid-column: span 2
     }
 
-    main section:nth-of-type(2) img {
+    .iPhoneSE img {
         width: 50%;
         height: 50%;
     }
-
 
     nav ul {
         width: 60%;
@@ -345,13 +363,32 @@ input {
 .support section:nth-of-type(3) h2,
 .support section:nth-of-type(4) h2 {
     font-size: 2.4em;
-    font-weight: 200;
+    font-weight: 300;
+}
+
+.iOS14 img {
+    width: 50%;
+    padding-top: 3em;
+}
+
+.inruilen img {
+    width: 50%;
+}
+
+.vraagsupport,
+p h2 {
+    color: black;
+}
+
+.vraagsupport img {
+    width: 100%;
+    height: 20%;
 }
 
 /* Tablet aanpassingen*/
 
 @media (min-width: 735px) {
-    .support img:nth-last-of-type(1) {
+    .supportimg {
         width: 100%px;
         height: 500px;
         background-size: cover;
@@ -359,7 +396,7 @@ input {
     }
 }
 
-/* grid voor tweede pagina */
+/* grid voor tweede pagina en de zoekbalk */
 
 @media (min-width: 850px) {
     .support {
@@ -390,6 +427,11 @@ input {
         grid-column: span 1
     }
 
+    .support section:nth-of-type(2) img,
+    .support section:nth-of-type(3) img {
+        width: 40%;
+        height: 40%;
+    }
 
 
     input {
@@ -411,6 +453,11 @@ input {
         top: 75px;
         font-size: 2.1em;
         font-weight: 400;
+    }
+
+    .support p {
+        font-size: 1.3em;
+        padding: 0.7em;
     }
 
 }
