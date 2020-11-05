@@ -21,8 +21,10 @@ Ik heb mijn eindgesprek nog niet gehad maar over het proces:
 Ik ben over het algemeen erg blij met wat ik heb geleerd dit vak,
 ik ben super blij met hoe ik mijn website responsive heb gemaakt. De mediaquerys vond ik er tof om mee te werken. Wat iets minder ging was toch echt wel de Navbar. Dan heb ik het wel over het maken van het hamburger menu met de navbar, dit heb ik ook met een mediaquery gedaan maar ik vond het best ingewikkeld. Een inzicht waar ik ben achtergekomen is dat ik wel eerder aan de bel moet trekken als ik hulp nodig heb, ik probeer het teveel zelf te doen. Ik heb nu een paar keer Sam om hulp gevraagd en een keer gebeld en dat klaarde een hoop op. Soms merk ik dat ik te lang bezig ben en dat ik de kleinste dingen over het hoofd zie zoals een spatie vergeten of niet goed afsluiten.
 
-(images/screenshot99.png)
-(images/screenshots98.png)
+
+![afbeelding](images/screenshot99.png)
+![afbeelding](images/screenshots98.png)
+
 
 
 
@@ -83,6 +85,8 @@ de website blijft veranderen hoe maak ik die nu goed na?
 **Screenshot(s):**
 
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/schermafbeelding1.png)
+
+
 
 **Breakdown-schets(en):**
 
