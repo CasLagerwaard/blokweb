@@ -23,7 +23,7 @@ ik ben super blij met hoe ik mijn website responsive heb gemaakt. De mediaquerys
 
 
 ![afbeelding](images/screenshot99.png)
-![afbeelding](images/screenshots98.png)
+![afbeelding](images/screenshot98.png)
 
 
 
@@ -35,7 +35,11 @@ ik ben super blij met hoe ik mijn website responsive heb gemaakt. De mediaquerys
 
 -same as voortgang 1-
 
-veel problemen met de nav bar, responsive design ging wel erg goed, veel gewerkt met classes, hierdoor heb ik bijvoorbeeld de CSS van pagina 2 anders gemaakt.
+veel problemen met de nav bar, responsive design ging wel erg goed, veel gewerkt met classes, hierdoor heb ik bijvoorbeeld de CSS van pagina 2 anders gemaakt. (fotos van de uiteindelijke responsive navbar)
+
+![afbeelding](images/screenshot70.png)
+![afbeelding](images/screenshot71.png)
+![afbeelding](images/screenshot72.png)
 
 
 
